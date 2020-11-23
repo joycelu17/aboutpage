@@ -1,0 +1,380 @@
+*{
+    margin:0;
+    font-family: Nunito Sans;
+}
+
+.title{
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topnav{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    z-index: 1; /* Stay on top */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */;
+}
+
+.topnav a{
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.navbar{
+    position: absolute;
+    top: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 100px; */
+    width: 90%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.logo > img{
+    margin-left: 10px;
+}
+
+.links {
+    display: flex;
+}
+.links > a{
+    margin: 0 auto;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    
+    background: #4E69F6;
+}
+
+#banner_box {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#banner_box div{
+    width: 85%;
+}
+
+#banner_img {
+    position: relative;
+    width: 50%;
+    left: 60%;
+    top: -5%;
+}
+
+#about {
+    position: relative;
+    width: 30%;
+    /* height: 40px; */
+    left: 10%;
+    top: 45%;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
+    
+    color: #FFFFFF;
+}
+
+#about_text {
+    position: relative;
+    width: 40%;
+    /* height: 88px; */
+    left: 10%;
+    top: 48%;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #FFFFFF;
+}
+
+#outer_page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#page {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 0px;
+    top: 0px;
+    width: 90%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+#founding {
+    position: relative;
+    /* width: 240px; */
+    /* height: 40px; */
+    left: 27px;
+    top: 39px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    
+    color: #000000;
+}
+
+#founding_text {
+    position: relative;
+    width: 80%;
+    /* height: 330px; */
+    left: 27px;
+    top: 32px;
+    padding-top: 30px;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+
+#ellipses {
+    position: relative;
+    width: 72px;
+    height: 12px;
+    left: 43%;
+    top: 22px;
+}
+
+#team {
+    position: relative;
+    width: 85%;
+    /* width: 417px;
+    height: 40px; */
+    left: 27px;
+    top: 75px;
+    bottom: 0px;
+    
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    
+    color: #000000;
+}
+
+#team_text {
+    position: relative;
+    width: 85%;
+    height: 171px;
+    left: 27px;
+    top: 95px;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    
+    color: #000000;
+}
+
+#board {
+    position: relative;
+    width: 142px;
+    height: 33px;
+    left: 27px;
+    top: 170px;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+#board_profiles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+
+    width: 100%;
+    top: 203px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 309px;
+    top: 20px;
+}
+
+.name {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    
+    color: #000000;
+}
+
+.position {
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.fun_fact {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#members {
+    position: relative;
+    width: 220px;
+    height: 33px;
+    left: 27px;
+    top: 217px;
+    
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+.member_profiles {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+
+    width: 100%;
+    top: 250px;
+}
+
+.spacer {
+    height: 70px;
+    top: 10px;
+}
+
+.footer{
+    position: relative;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    left: 49px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.footerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 75px;
+}
+
+.footerbox a{
+    display: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .logo{
+    /* display: none; */
+    color:black;
+    margin-bottom: 6px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social img{
+    padding-right: 10px;
+}
+.social h3{
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.end{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
